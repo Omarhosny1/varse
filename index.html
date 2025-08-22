@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="WhatsApp_Image_2025-08-22_at_17.45.10_e3f14c07-removebg-preview.png" type="image/jpg">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>CineVerse - Your Ultimate Movie & Series Companion</title>
+</head>
+<body>
+    <div class="animated-bg"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>CineVerse</h1>
+            <div class="links" >
+            <ul class="nav-links" id="list">
+                <li><a href="#Home" onclick="scrollToSection('Home')">Home</a></li>
+                <li><a href="#features" onclick="scrollToSection('features')">Features</a></li>
+                <li><a href="#screenshots" onclick="scrollToSection('screenshots')">Screenshots</a></li>
+                <li><a href="#tech" onclick="scrollToSection('tech')">Tech Stack</a></li>
+                <li><a href="#team" onclick="scrollToSection('team')">Team</a></li>
+                <li><button class="btn"><a href="https://github.com/Moscow-Squad/CineVerse/releases/tag/v1.0.1" target="_blank" download>Download App</a></button></li>
+            </ul>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="Home">
+        <div class="black">
+        <div class="hero-content">
+            <img class="icon" src="assets/WhatsApp_Image_2025-08-22_at_17.45.10_e3f14c07-removebg-preview.png" alt="CineVerse" width="70px" height="70px">
+            <h2>Welcome to CineVerse</h2>
+            <p>Dive into a world of endless entertainment! Explore movies and TV shows, discover your favorite actors, build collections, and enjoy a personalized cinematic journey like never before.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-primary" onclick="window.location.href='https://youtube.com/shorts/H5zF8E8ptrU?feature=share'">
+                    🚀 Demo
+                </button>
+                <a href="https://github.com/Moscow-Squad/CineVerse" class="btn btn-secondary" target="_blank">
+                    📱 View on GitHub
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <h2 class="section-title">Amazing Features</h2>
+        <div class="features-grid">
+            <div class="feature-card loading">
+                <div class="feature-icon">🔍</div>
+                <h3>Smart Search</h3>
+                <p>Search for any movie or series with our intelligent search engine. Find exactly what you're looking for instantly.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">👤</div>
+                <h3>Actor Details</h3>
+                <p>Discover comprehensive information about your favorite stars and explore their complete filmography.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">⭐</div>
+                <h3>Rate & Review</h3>
+                <p>Share your thoughts! Rate movies and series, write reviews, and help others discover great content.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">🎯</div>
+                <h3>MCQ Game</h3>
+                <p>Take our interactive quiz to get personalized movie and series recommendations tailored just for you.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">📂</div>
+                <h3>Custom Collections</h3>
+                <p>Create and manage your own watchlists. Organize your favorite content exactly how you want.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">🌓</div>
+                <h3>Dark & Light Themes</h3>
+                <p>Choose between beautiful dark and light themes. Perfect viewing experience any time of day.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">🌐</div>
+                <h3>Multi-language Support</h3>
+                <p>Available in English and Arabic. Enjoy CineVerse in your preferred language.</p>
+            </div>
+            <div class="feature-card loading">
+                <div class="feature-icon">🚫</div>
+                <h3>Content Filter</h3>
+                <p>Advanced content filtering system that automatically blurs inappropriate visuals for a safer experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="screenshots-container">
+            <h2 class="section-title">App Screenshots</h2>
+        <div class="all-appscreen">
+            <div class="appscreen">
+                <img width="200" src="https://github.com/user-attachments/assets/5120e256-e21f-4577-b719-2baf01e97d09" />
+                <h3>Home Screen</h3>
+            </div>
+            <div class="appscreen">
+                <img width="200" src="https://github.com/user-attachments/assets/5d0e6ec0-872a-4a25-9c6f-1933ea8a5682" />
+                <h3>Explore Screen</h3>
+            </div>
+            <div class="appscreen">
+                <img width="200" alt="image" src="https://github.com/user-attachments/assets/db94c278-7573-4e51-9b32-c8510f30a47a" />
+                <h3>Match Result</h3>
+            </div>
+            <div class="appscreen">
+                <img width="200" src="https://github.com/user-attachments/assets/b853dde0-d05e-4b3b-8a20-7cc688391491" />
+                <h3>Movie/ Series Details</h3>
+            </div>
+        </div>
+            <div class="screenshots-grid" id="screenshotsGrid">
+                <!-- Screenshots will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section id="tech" class="tech-stack">
+        <h2 class="section-title">Built with Modern Tech</h2>
+        <div class="tech-categories">
+            <div class="tech-category">
+                <h3>Core & Architecture</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Kotlin</span>
+                    <span class="tech-tag">Coroutines & Flow</span>
+                    <span class="tech-tag">Clean Architecture</span>
+                    <span class="tech-tag">MVVM</span>
+                    <span class="tech-tag">Repository Pattern</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>UI & Design</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Jetpack Compose</span>
+                    <span class="tech-tag">Material 3</span>
+                    <span class="tech-tag">Coil 3</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Jetpack Suite</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Paging 3</span>
+                    <span class="tech-tag">WorkManager</span>
+                    <span class="tech-tag">DataStore</span>
+                    <span class="tech-tag">Navigation Component</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Networking & Storage</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">Retrofit</span>
+                    <span class="tech-tag">OkHttp</span>
+                    <span class="tech-tag">Room Database</span>
+                    <span class="tech-tag">Kotlinx.Serialization</span>
+                </div>
+            </div>
+            <div class="tech-category">
+                <h3>Advanced Features</h3>
+                <div class="tech-tags">
+                    <span class="tech-tag">TensorFlow Lite</span>
+                    <span class="tech-tag">Hilt DI</span>
+                    <span class="tech-tag">Firebase Suite</span>
+                    <span class="tech-tag">TMDb API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="team-container">
+            <h2 class="section-title">Meet the Moscow Squad</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Ahmed Hosny</h4>
+                    <a href="https://github.com/Ahmed7osny1" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/ahmed-7osny/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Shrouk Mohamed</h4>
+                    <a href="https://github.com/ShroukMohamed16" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/shrouk-mohamed-" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Nour elhoda Ahmed</h4>
+                    <a href="https://github.com/nourelhodaahmed" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/nour-el-hoda-ahmed-69479024b/  " target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Israa Mohamed</h4>
+                    <a href="https://github.com/israamohamed107" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/israa-mohamed107" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Mohamed Omer</h4>
+                    <a href="https://github.com/MohamedOmar989" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/mohamed-omar-2aa8b231b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Zyad Abdullah</h4>
+                    <a href="https://github.com/ZeyadAbdullah679" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/zeyadabdullah/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Farah Maytham</h4>
+                    <a href="https://github.com/Farah-Dev4" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/farah-maytham-ahmed-60b607236/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                
+                <div class="team-member">
+                    <h4>Adel Tamer</h4>
+                    <a href="https://github.com/AdelTamer35" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/adel-tamer-5b540527b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Eslam Magdy</h4>
+                    <a href="https://github.com/IslamMagd" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/islam-magdy-09b51621a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Hazem Alkateb</h4>
+                    <a href="https://github.com/hazemka" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/hazem-alkateb/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                
+                <div class="team-member">
+                    <h4>Kareem Mohamed</h4>
+                    <a href="https://github.com/kareem-01" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/kareem-esam-264167225/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                <div class="team-member">
+                    <h4>Khaled Eid</h4>
+                    <a href="https://github.com/khaledeid1k" target="_blank"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.linkedin.com/in/khaled-eid-259319102/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="https://github.com/Moscow-Squad/CineVerse" target="_blank">GitHub Repository</a>
+                <a href="#features" onclick="scrollToSection('features')">Features</a>
+                <a href="#tech" onclick="scrollToSection('tech')">Technology</a>
+                <a href="#team" onclick="scrollToSection('team')">Team</a>
+            </div>
+            <p>&copy; 2025 CineVerse by Moscow Squad. Built with ❤️ for movie lovers everywhere.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
