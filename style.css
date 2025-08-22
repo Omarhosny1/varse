@@ -722,9 +722,15 @@ footer {
         text-align: center;
     }
     
-    .nav-links .btn{
+    .nav-links .btn {
         width: 50%;
         height: auto;
+        background-color: transparent;
+        color: white;
+    }
+
+    .nav-links .btn a{
+        color: white;
     }
 
     .mobile-menu-btn {
@@ -741,8 +747,7 @@ footer {
     }
 
     .hero-content img{
-        width: 10vw;
-        height: 10vh;
+        display: none;
     }
 
     .features-grid {
@@ -789,13 +794,6 @@ footer {
         height: auto;
     }
 
-    .hero-content img{
-        width: 5vw;
-        height: 5vh;
-        position: absolute;
-        left: 30px;
-        top: 10px;
-    }
 
     .appscreen {
         width: 100%;
