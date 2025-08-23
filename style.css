@@ -134,12 +134,16 @@ nav ul li {
     font-size: 15px;
 }
 
+.nav-links .btn a:hover{
+    color: black;
+}
+
 .nav-links a:hover {
     color: white;
     transform: translateY(-2px);
 }
 
-.nav-links a::after {
+.nav-links li a[href^="#"]::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -150,7 +154,7 @@ nav ul li {
     transition: width 0.3s ease;
 }
 
-.nav-links a:hover::after {
+.nav-links li a[href^="#"]:hover::after {
     width: 100%;
 }
 
