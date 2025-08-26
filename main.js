@@ -5,12 +5,14 @@ menu.onclick = function(){
     menu.classList.toggle('active');
     list.classList.toggle('active');
 }
+
+// animation scroll
 function animation(sectionSelector, cardSelector){
 let features = document.getElementById(sectionSelector);
 window.onscroll = function() {
     let value = scrollY;
     let offset = features.offsetTop;
-    if(value >= offset - 600){
+    if(value >= offset - 650){
         document.querySelectorAll(cardSelector).forEach(card =>{
             card.classList.add("animate");
         });
