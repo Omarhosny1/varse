@@ -76,7 +76,6 @@ nav ul li {
     color: black;
 }
 
-
 .nav-links a[href^="#"]:hover {
     color: white;
     transform: translateY(-2px);
@@ -93,7 +92,9 @@ nav ul li {
     transition: width 0.3s ease;
 }
 
-.nav-links li a[href^="#"]:hover::after {
+.nav-links li a[href^="#"]:hover::after,
+.nav-links li a.active::after
+{
     width: 100%;
 }
 
@@ -272,15 +273,21 @@ nav ul li {
     position: relative;
     overflow: hidden;
     text-align: center;
+    transform: translateY(0px);
 }
 
+.feature-card:hover {
+    transform: translateY(-10px) ;
+    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
+    border-color: rgb(139, 92, 246);
+}
 .feature-card::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 1px;
+    height: 2px;
     background: linear-gradient(45deg, rgba(139, 92, 246, 0.5), rgba(32, 32, 147, 0.5));
     transform: scaleX(0);
     transition: transform 0.3s ease;
@@ -288,12 +295,6 @@ nav ul li {
 
 .feature-card:hover::before {
     transform: scaleX(1);
-}
-
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
-    border-color: rgb(139, 92, 246);
 }
 
 .feature-icon {
@@ -379,7 +380,7 @@ nav ul li {
 }
 
 .appscreen:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     box-shadow: 0 1em 2em rgba(139, 92, 246, 0.2);
 }
 
