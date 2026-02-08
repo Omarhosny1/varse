@@ -12,7 +12,7 @@
     <!-- Header -->
     <header>
         <nav>
-            <h1>CineVerse</h1>
+            <span>CineVerse</span>
             <div class="links" >
             <ul class="nav-links" id="list">
                 <li><a href="#Home" class="link active" onclick="scrollToSection('Home')">Home</a></li>
@@ -20,7 +20,7 @@
                 <li><a href="#screenshots" class="link" onclick="scrollToSection('screenshots')">Screenshots</a></li>
                 <li><a href="#tech" class="link" onclick="scrollToSection('tech')">Tech Stack</a></li>
                 <li><a href="#team" class="link" onclick="scrollToSection('team')">Team</a></li>
-                <li><a class="btn" href="https://github.com/Moscow-Squad/CineVerse/releases/tag/v1.0.1" target="_blank">Download App</a></li>
+                <li><a class="download" href="https://github.com/Moscow-Squad/CineVerse/releases/tag/v1.0.1" target="_blank">Download App</a></li>
             </ul>
             </div>
             <div class="menu-toggle" id="menu-toggle">
@@ -35,17 +35,23 @@
     <section class="hero" id="Home">
         <div class="black">
         <div class="hero-content">
-            <img class="icon" src="assets/WhatsApp_Image_2025-08-22_at_17.45.10_e3f14c07-removebg-preview.png" alt="CineVerse" width="70px" height="70px">
-            <h2>Welcome to CineVerse</h2>
-            <p>Dive into a world of endless entertainment! Explore movies and TV shows, discover your favorite actors, build collections, and enjoy a personalized cinematic journey like never before.</p>
-            <div class="cta-buttons">
-                <button class="btn btn-primary" onclick="window.location.href='https://youtube.com/shorts/H5zF8E8ptrU?feature=share'">
-                    🚀 Demo
-                </button>
-                <a href="https://github.com/Moscow-Squad/CineVerse" class="btn btn-secondary" target="_blank">
-                    📱 View on GitHub
-                </a>
+            <div class="header">
+                <figure class="icon">
+                    <img class="icon" src="assets/WhatsApp_Image_2025-08-22_at_17.45.10_e3f14c07-removebg-preview.png" alt="CineVerse" width="70px" height="70px">
+                </figure>
+                <h1>Welcome to CineVerse</h1>
             </div>
+            <article>
+                <p>Dive into a world of endless entertainment! Explore movies and TV shows, discover your favorite actors, build collections, and enjoy a personalized cinematic journey like never before.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='https://youtube.com/shorts/H5zF8E8ptrU?feature=share'">
+                        🚀 Demo
+                    </button>
+                    <a href="https://github.com/Moscow-Squad/CineVerse" class="btn btn-secondary" target="_blank">
+                        📱 View on GitHub
+                    </a>
+                </div>
+            </article>
         </div>
         </div>
     </section>
@@ -55,42 +61,42 @@
         <h2 class="section-title">Amazing Features</h2>
         <div class="features-grid">
             <div class="feature-card" id="feature-card">
-                <div class="feature-icon">🔍</div>
+                <div class="feature-icon"><i>🔍</i></div>
                 <h3>Smart Search</h3>
                 <p>Search for any movie or series with our intelligent search engine. Find exactly what you're looking for instantly.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">👤</div>
+                <div class="feature-icon"><i>👤</i></div>
                 <h3>Actor Details</h3>
                 <p>Discover comprehensive information about your favorite stars and explore their complete filmography.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">⭐</div>
+                <div class="feature-icon"><i>⭐</i></div>
                 <h3>Rate & Review</h3>
                 <p>Share your thoughts! Rate movies and series, write reviews, and help others discover great content.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🎯</div>
+                <div class="feature-icon"><i>🎯</i></div>
                 <h3>MCQ Game</h3>
                 <p>Take our interactive quiz to get personalized movie and series recommendations tailored just for you.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">📂</div>
+                <div class="feature-icon"><i>📂</i></div>
                 <h3>Custom Collections</h3>
                 <p>Create and manage your own watchlists. Organize your favorite content exactly how you want.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🌓</div>
+                <div class="feature-icon"><i>🌓</i></div>
                 <h3>Dark & Light Themes</h3>
                 <p>Choose between beautiful dark and light themes. Perfect viewing experience any time of day.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🌐</div>
+                <div class="feature-icon"><i>🌐</i></div>
                 <h3>Multi-language Support</h3>
                 <p>Available in English and Arabic. Enjoy CineVerse in your preferred language.</p>
             </div>
             <div class="feature-card">
-                <div class="feature-icon">🚫</div>
+                <div class="feature-icon"><i>🚫</i></div>
                 <h3>Content Filter</h3>
                 <p>Advanced content filtering system that automatically blurs inappropriate visuals for a safer experience.</p>
             </div>
@@ -102,22 +108,30 @@
         <div class="screenshots-container">
             <h2 class="section-title">App Screenshots</h2>
         <div class="all-appscreen">
-            <div class="appscreen" id="appscreen">
-                <img width="200" src="https://github.com/user-attachments/assets/5120e256-e21f-4577-b719-2baf01e97d09" />
-                <h3>Home Screen</h3>
-            </div>
-            <div class="appscreen">
-                <img width="200" src="https://github.com/user-attachments/assets/5d0e6ec0-872a-4a25-9c6f-1933ea8a5682" />
-                <h3>Explore Screen</h3>
-            </div>
-            <div class="appscreen">
-                <img width="200" alt="image" src="https://github.com/user-attachments/assets/db94c278-7573-4e51-9b32-c8510f30a47a" />
-                <h3>Match Result</h3>
-            </div>
-            <div class="appscreen">
-                <img width="200" src="https://github.com/user-attachments/assets/b853dde0-d05e-4b3b-8a20-7cc688391491" />
-                <h3>Movie/ Series Details</h3>
-            </div>
+            <figure class="appscreen" id="appscreen">
+                <img loading="lazy" width="200" src="https://github.com/user-attachments/assets/5120e256-e21f-4577-b719-2baf01e97d09" />
+                <figcaption class="caption">
+                    <h3>Home Screen</h3>
+                </figcaption>
+            </figure>
+            <figure class="appscreen">
+                <img loading="lazy" width="200" src="https://github.com/user-attachments/assets/5d0e6ec0-872a-4a25-9c6f-1933ea8a5682" />
+                <figcaption class="caption">
+                    <h3>Explore Screen</h3>
+                </figcaption>
+            </figure>
+            <figure class="appscreen">
+                <img loading="lazy" width="200" alt="image" src="https://github.com/user-attachments/assets/db94c278-7573-4e51-9b32-c8510f30a47a" />
+                <figcaption class="caption">
+                    <h3>Match Result</h3>
+                </figcaption>
+            </figure>
+            <figure  class="appscreen">
+                <img loading="lazy" width="200" src="https://github.com/user-attachments/assets/b853dde0-d05e-4b3b-8a20-7cc688391491" />
+                <figcaption class="caption">
+                    <h3>Movie/ Series Details</h3>
+                </figcaption>
+            </figure>
         </div>
         </div>
     </section>
@@ -129,46 +143,58 @@
             <div class="tech-category" id="tech-category">
                 <h3>Core & Architecture</h3>
                 <div class="tech-tags">
+                    <ul class="feature-list">
+                        <li>
                     <span class="tech-tag">Kotlin</span>
-                    <span class="tech-tag">Coroutines & Flow</span>
-                    <span class="tech-tag">Clean Architecture</span>
-                    <span class="tech-tag">MVVM</span>
-                    <span class="tech-tag">Repository Pattern</span>
+                        </li>
+                        <li><span class="tech-tag">Coroutines & Flow</span></li>
+                        <li><span class="tech-tag">Clean Architecture</span></li>
+                        <li><span class="tech-tag">MVVM</span></li>
+                        <li><span class="tech-tag">Repository Pattern</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="tech-category">
                 <h3>UI & Design</h3>
                 <div class="tech-tags">
-                    <span class="tech-tag">Jetpack Compose</span>
-                    <span class="tech-tag">Material 3</span>
-                    <span class="tech-tag">Coil 3</span>
+                    <ul class="feature-list">
+                        <li><span class="tech-tag">Jetpack Compose</span></li>
+                        <li><span class="tech-tag">Material 3</span></li>
+                        <li><span class="tech-tag">Coil 3</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="tech-category">
                 <h3>Jetpack Suite</h3>
                 <div class="tech-tags">
-                    <span class="tech-tag">Paging 3</span>
-                    <span class="tech-tag">WorkManager</span>
-                    <span class="tech-tag">DataStore</span>
-                    <span class="tech-tag">Navigation Component</span>
+                    <ul class="feature-list">
+                        <li><span class="tech-tag">Paging 3</span></li>
+                        <li><span class="tech-tag">WorkManager</span></li>
+                        <li><span class="tech-tag">DataStore</span></li>
+                        <li><span class="tech-tag">Navigation Component</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="tech-category">
                 <h3>Networking & Storage</h3>
                 <div class="tech-tags">
-                    <span class="tech-tag">Retrofit</span>
-                    <span class="tech-tag">OkHttp</span>
-                    <span class="tech-tag">Room Database</span>
-                    <span class="tech-tag">Kotlinx.Serialization</span>
+                    <ul class="feature-list">
+                        <li><span class="tech-tag">Retrofit</span></li>
+                        <li><span class="tech-tag">OkHttp</span></li>
+                        <li><span class="tech-tag">Room Database</span></li>
+                        <li><span class="tech-tag">Kotlinx.Serialization</span></li>
+                    </ul>
                 </div>
             </div>
             <div class="tech-category">
                 <h3>Advanced Features</h3>
                 <div class="tech-tags">
-                    <span class="tech-tag">TensorFlow Lite</span>
-                    <span class="tech-tag">Hilt DI</span>
-                    <span class="tech-tag">Firebase Suite</span>
-                    <span class="tech-tag">TMDb API</span>
+                    <ul class="feature-list">
+                        <li><span class="tech-tag">TensorFlow Lite</span></li>
+                        <li><span class="tech-tag">Hilt DI</span></li>
+                        <li><span class="tech-tag">Firebase Suite</span></li>
+                        <li><span class="tech-tag">TMDb API</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -181,76 +207,100 @@
             <div class="team-grid">
                 <div class="team-member" id="team-member">
                     <h4>Ahmed Hosny</h4>
-                    <a href="https://github.com/Ahmed7osny1" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/ahmed-7osny/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/Ahmed7osny1" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/ahmed-7osny/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
                 
                 <div class="team-member">
                     <h4>Shrouk Mohamed</h4>
-                    <a href="https://github.com/ShroukMohamed16" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/shrouk-mohamed-" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/ShroukMohamed16" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/shrouk-mohamed-" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Nour elhoda Ahmed</h4>
-                    <a href="https://github.com/nourelhodaahmed" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/nour-el-hoda-ahmed-69479024b/  " target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/nourelhodaahmed" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/nour-el-hoda-ahmed-69479024b/  " target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
+                    
                 </div>
 
                 <div class="team-member">
                     <h4>Israa Mohamed</h4>
-                    <a href="https://github.com/israamohamed107" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/israa-mohamed107" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/israamohamed107" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/israa-mohamed107" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Mohamed Omer</h4>
-                    <a href="https://github.com/MohamedOmar989" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/mohamed-omar-2aa8b231b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/MohamedOmar989" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/mohamed-omar-2aa8b231b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Zyad Abdullah</h4>
-                    <a href="https://github.com/ZeyadAbdullah679" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/zeyadabdullah/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/ZeyadAbdullah679" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/zeyadabdullah/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Farah Maytham</h4>
-                    <a href="https://github.com/Farah-Dev4" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/farah-maytham-ahmed-60b607236/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/Farah-Dev4" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/farah-maytham-ahmed-60b607236/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
                 
                 <div class="team-member">
                     <h4>Adel Tamer</h4>
-                    <a href="https://github.com/AdelTamer35" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/adel-tamer-5b540527b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/AdelTamer35" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/adel-tamer-5b540527b/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Eslam Magdy</h4>
-                    <a href="https://github.com/IslamMagd" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/islam-magdy-09b51621a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/IslamMagd" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/islam-magdy-09b51621a/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Hazem Alkateb</h4>
-                    <a href="https://github.com/hazemka" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/hazem-alkateb/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/hazemka" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/hazem-alkateb/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
                 
                 <div class="team-member">
                     <h4>Kareem Mohamed</h4>
-                    <a href="https://github.com/kareem-01" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/kareem-esam-264167225/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/kareem-01" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kareem-esam-264167225/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
 
                 <div class="team-member">
                     <h4>Khaled Eid</h4>
-                    <a href="https://github.com/khaledeid1k" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.linkedin.com/in/khaled-eid-259319102/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                    <ul class="team-links">
+                        <li><a href="https://github.com/khaledeid1k" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/khaled-eid-259319102/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a></li>
+                    </ul>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -259,13 +309,16 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="https://github.com/Moscow-Squad/CineVerse" target="_blank">GitHub Repository</a>
-                <a href="#features" onclick="scrollToSection('features')">Features</a>
-                <a href="#tech" onclick="scrollToSection('tech')">Technology</a>
-                <a href="#team" onclick="scrollToSection('team')">Team</a>
+                <ul class="feature-list">
+                    <li><a href="https://github.com/Moscow-Squad/CineVerse" target="_blank">GitHub Repository</a></li>
+                    <li><a href="#features" onclick="scrollToSection('features')">Features</a></li>
+                    <li><a href="#tech" onclick="scrollToSection('tech')">Technology</a></li>
+                    <li><a href="#team" onclick="scrollToSection('team')">Team</a></li>
+                </ul>
             </div>
             <p>&copy; 2025 CineVerse by Moscow Squad. Built with ❤️ for movie lovers everywhere.</p>
         </div>
     </footer>
-
     <script src="main.js"></script>
+    </body>
+    </html>
