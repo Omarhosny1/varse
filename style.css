@@ -279,7 +279,7 @@ section {
     padding: 0;
     text-align: center;
     background-color: #0f0c24;
-    background-image: url("../assets/bg.jpg");
+    background-image: url("assets/bg.jpg");
     background-position: center;
     background-size: cover;
 }
